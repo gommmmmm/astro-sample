@@ -14,7 +14,7 @@ phases:
       - npm install
   build:
     commands:
-      - npx run build
+      - npm run build
   post_build:
     commands:
-      - npx sst deploy --stage dev
+      - npm sst deploy --stage dev
