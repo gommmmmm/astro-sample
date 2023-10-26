@@ -1,0 +1,63 @@
+@charset "UTF-8";
+
+
+/* 特設コンテンツは以下のID内にCSSを適応する */
+#ns-extension {
+  width:920px;
+  margin:0px auto;
+}
+
+
+/* 参考：サイト全体のスタイルをリセットする */
+#ns-extension * {
+  margin:0;
+  padding:0;
+  font-size:16px;
+  line-height:1.8em;
+  font-weight:normal;
+  font-style:normal;
+}
+
+
+/*
+
+# サイト内breakpoint値
+
+以下
+のコンテンツのwidthはサイト共通で用いているものですが、内容に応じては100%に伸ばして
+いただいてかまいません。
+ex. http://www.nissin.com/jp/products/brands/gorogra/special/1/
+
+*/
+@media screen and (min-width: 0px) and (max-width: 599px) {
+  /*  スマホ向けの記述 */
+  #ns-extension {
+    width:100%;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 787px) {
+  /*  PC最小サイズ向けの記述 */
+  #ns-extension {
+    width:554px;
+  }
+}
+
+@media screen and (min-width: 788px) and (max-width: 979px) {
+  /*  PC小サイズ向けの記述 */
+  #ns-extension {
+    width:728px;
+  }
+}
+
+@media screen and (min-width: 980px) and (max-width: 1167px) {
+  /*  PC中サイズ向けの記述 *IE8向け標準サイズ */
+}
+
+@media screen and (min-width: 1168px) {
+  /*  PC大サイズ向けの記述 */
+  #ns-extension {
+    width:1108px;
+  }
+}
+

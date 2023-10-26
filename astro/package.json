@@ -1,0 +1,23 @@
+{
+  "name": "astro",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "sst bind astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "sst:deploy": "sst deploy",
+    "sst:dev": "sst dev"
+  },
+  "dependencies": {
+    "astro": "^2.10.15"
+  },
+  "devDependencies": {
+    "astro-sst": "^2.30.3",
+    "aws-cdk-lib": "2.95.1",
+    "constructs": "10.2.69",
+    "sst": "^2.30.3"
+  }
+}

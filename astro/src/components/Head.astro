@@ -1,0 +1,57 @@
+---
+interface Props {
+	title: string;
+}
+
+const { href, title, body } = Astro.props;
+---
+
+<!-- #ns_header -->
+<header id="ns_header">
+  <div class="ns-wrapper">
+    <h1><a href="//www.nissin.com/jp/"><img src="//www.nissin.com/jp/assets/images/logo.png" width="94" height="47" alt="日清食品グループ"></a></h1>
+    <form method="get" action="/jp/search/" class="ns_header-search js-header-search_pc">
+      <div class="ns_header-search-form ns_header-search-form--pc">
+        <input type="text" name="q" value="" autocomplete="off">
+        <button type="submit"><i>検索</i></button>
+        <a class="js-search-close">リセット</a>
+      </div>
+      <div class="ns_header-search-suggest js-search-suggest"></div>
+    </form>
+    <form method="get" action="/jp/search/" class="ns_header-search--sp js-header-search_sp">
+      <div class="ns_header-search-form ns_header-search-form--sp">
+        <input type="text" name="q" value="" autocomplete="off">
+        <button type="submit"><i>検索</i></button>
+        <a class="js-search-close">リセット</a>
+      </div>
+      <div class="ns_header-search-suggest js-search-suggest"></div>
+    </form>
+    <nav class="ns_header-nav">
+      <div class="ns-showhide-pc">
+        <ul class="ns_header-nav-list ns_header-nav-list--pc">
+          <li class="inactive"><a href="//www.nissin.com/jp/news/">ニュース</a></li>
+          <li class="active"><a href="//www.nissin.com/jp/products/">製品</a></li>
+          <li class="inactive"><a href="//www.nissin.com/jp/customer/">お客さま窓口</a></li>
+          <li class="inactive"><a href="//www.nissin.com/jp/ir/">IR</a></li>
+          <li class="inactive"><a href="//www.nissin.com/jp/sustainability/">サステナビリティ</a></li>
+          <li class="inactive"><a href="//www.nissin.com/jp/about/">日清食品グループ</a></li>
+          <li class="inactive"><a href="//www.nissin.com/jp/recruit/" target="_blank" class="ns_header-nav-a-recruit">リクルート</a></li>
+          <li><a href="https://store.nissin.com/" target="_blank" class="ns_header-nav-a-online">オンラインストア</a></li>
+        </ul>
+      </div>
+      <div class="ns-showhide-sp">
+        <ul class="ns_header-nav-list ns_header-nav-list--sp">
+          <li class="inactive"><a href="//www.nissin.com/jp/news/">ニュース</a></li>
+          <li class="active"><a href="//www.nissin.com/jp/products/">製品</a></li>
+          <li class="inactive"><a href="//www.nissin.com/jp/customer/">お客さま窓口</a></li>
+          <li><a href="https://store.nissin.com/" target="_blank">オンライン<br>ストア</a></li>
+          <li class="inactive"><a href="//www.nissin.com/jp/ir/">IR</a></li>
+          <li class="inactive"><a href="//www.nissin.com/jp/sustainability/">サステナビリティ </a></li>
+          <li class="inactive"><a href="//www.nissin.com/jp/about/">グループ情報</a></li>
+          <li class="inactive"><a href="//www.nissin.com/jp/recruit/" target="_blank">リクルート</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- //#ns_header -->
